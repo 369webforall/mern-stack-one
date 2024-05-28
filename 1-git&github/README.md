@@ -6,7 +6,7 @@
 
 ## CLASS RECORDING
 
-
+1. [Introduction-installation-git github basic](https://youtu.be/JRcb5karOtk)
 
 
 ## Configure git
