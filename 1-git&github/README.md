@@ -10,6 +10,8 @@
 
 1. [Introduction-installation-git github basic](https://youtu.be/JRcb5karOtk)
 
+2. [Git-Github practice class](https://youtu.be/zCMpKMOwQ5Q)
+
 
 ## Configure git
 - open your terminal and add below command.
