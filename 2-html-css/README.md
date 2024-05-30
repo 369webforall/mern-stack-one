@@ -2,6 +2,8 @@
 
 ## CLASS RECORDING VIDEO LINK
 
+1. [HTML CLASS](https://youtu.be/tQ8YtXxsGOA)
+
 
 # HTML - Hypertext Markup Language
 
