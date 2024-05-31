@@ -197,6 +197,253 @@ There are hundreds of HTML elements, most of the time we only use these elemets.
 
 ```
 
+## Table
+
+`<table>:`
+
+The container element for the table.
+
+`<tr> (Table Row):`
+Defines a row in the table. It contains <th> or <td> elements.
+
+
+<tr>
+  <td>Row 1, Cell 1</td>
+  <td>Row 1, Cell 2</td>
+</tr>
+
+`<th> (Table Header Cell):`
+Defines a header cell in a table, usually used at the start of a row or column. Text in <th> elements is typically bold and centered by default.
+
+
+<tr>
+  <th>Header 1</th>
+  <th>Header 2</th>
+</tr>
+
+`<td> (Table Data Cell):`
+Defines a standard data cell in a table.
+
+<tr>
+  <td>Data 1</td>
+  <td>Data 2</td>
+</tr>
+Optional HTML Table Tags
+
+`<thead> (Table Head):`
+Groups a set of rows that define the head of the table. It usually contains header information.
+
+<thead>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+</thead>
+
+`<tbody> (Table Body):`
+Groups a set of rows that contain the main body of the table data.
+
+
+<tbody>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+  </tr>
+</tbody>
+
+`<tfoot> (Table Footer):`
+
+Groups a set of rows that define the footer of the table.
+
+
+<tfoot>
+  <tr>
+    <td>Footer 1</td>
+    <td>Footer 2</td>
+  </tr>
+</tfoot>
+<caption>:
+Provides a caption or title for the table.
+
+
+<caption>Table Title</caption>
+
+`<colgroup> and <col>:`
+The <colgroup> element groups one or more <col> elements, which define column properties for the table.
+
+
+<colgroup>
+  <col style="background-color: yellow">
+  <col style="background-color: lightblue">
+</colgroup>
+
+`Attributes for Table Elements`
+
+- border: Specifies the width of the border around the table.
+- cellpadding: Defines the space between the cell wall and the cell content.
+- cellspacing: Defines the space between cells.
+- width: Specifies the width of the table.
+- align: Aligns the table to the left, right, or center.
+
+Example of a Complete HTML Table
+
+```html
+<table border="1">
+  <caption>Monthly Sales Data</caption>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Sales</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$10,000</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$8,000</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total</td>
+      <td>$18,000</td>
+    </tr>
+  </tfoot>
+</table>
+```
+Explanation of Example
+
+- <table border="1">: Creates a table with a border.
+- <caption>: Adds a title to the table, "Monthly Sales Data".
+- <thead>: Contains the header row with columns "Month" and "Sales".
+- <tbody>: Contains the data rows for January and February.
+- <tfoot>: Contains the footer row with the total sales.
+
+
+## Form
+
+`The <form> Element`
+
+The <form> element is the container for all form controls. It has several important attributes:
+
+- action: Specifies the URL to which the form data will be sent.
+- method: Defines the HTTP method to be used when sending the form data. Common values are GET and POST.
+- enctype: Specifies how the form data should be encoded when submitted. Common values are application/x-www-form-urlencoded (default) and multipart/form-data (used for file uploads).
+Important Form Tags
+
+`<input>:`
+The <input> element is used to create various types of form controls. Important attributes include:
+
+- type: Specifies the type of input control. Common types are:
+- text: Single-line text input
+- password: Password input (text is hidden)
+- email: Input for email addresses
+- number: Numeric input
+- checkbox: Checkbox input
+- radio: Radio button input
+- submit: Submit button
+- reset: Reset button
+- file: File upload control
+- hidden: Hidden input
+- name: Name of the form control, used to identify the data after form submission.
+- value: The initial value of the input control.
+
+`<label>:`
+The <label> element defines a label for an <input> element. The for attribute associates the label with a specific input element by its id.
+
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+
+`<textarea>:`
+The <textarea> element is used for multi-line text input.
+
+
+<textarea name="message" rows="4" cols="50"></textarea>
+
+`<select>:`
+The <select> element creates a drop-down list. It contains <option> elements.
+
+
+<select name="country">
+  <option value="usa">USA</option>
+  <option value="canada">Canada</option>
+</select>
+
+`<option>:`
+The <option> element defines an option in a drop-down list.
+
+
+<option value="usa">USA</option>
+
+`<button>:`
+The <button> element is used to create a clickable button.
+
+
+<button type="submit">Submit</button>
+
+`<fieldset> and <legend>:`
+
+The <fieldset> element groups related form controls, and the <legend> element provides a caption for the fieldset.
+
+
+<fieldset>
+  <legend>Personal Information</legend>
+  <label for="fname">First Name:</label>
+  <input type="text" id="fname" name="fname">
+</fieldset>
+
+`<datalist>:`
+The <datalist> element provides a list of predefined options for an <input> element.
+
+
+<input list="browsers" name="browser">
+<datalist id="browsers">
+  <option value="Chrome">
+  <option value="Firefox">
+</datalist>
+
+`<output>:`
+The <output> element represents the result of a calculation or user action.
+
+<output name="result" for="a b">0</output>
+
+
+## Example of a Complete Form
+
+```html
+<form action="/submit" method="post">
+  <fieldset>
+    <legend>Personal Information</legend>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Preferences</legend>
+    <label for="newsletter">Subscribe to newsletter:</label>
+    <input type="checkbox" id="newsletter" name="newsletter">
+    
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+  </fieldset>
+  
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+</form>
+```
+
 ## Registration form
 
 - index.html
@@ -330,21 +577,6 @@ a {
 }
 ```
 
-## Form
-
-- An HTML form is used to collect user input. The user input is most often sent to a server for processing.
-
-### The form Element
-
-- The **form** element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.
-
-```
-- <input type="text"> Displays a single-line text input field
-- <input type="radio"> Displays a radio button (for selecting one of many choices)
-- <input type="checkbox"> Displays a checkbox (for selecting zero or more of many choices)
-- <input type="submit"> Displays a submit button (for submitting the form)
-- <input type="button"> Displays a clickable button
-```
 
 ### Create basic html page structure for below Projects, Try to use semantic tags as possible. css not required.
 
