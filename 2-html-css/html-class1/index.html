@@ -11,8 +11,8 @@
 
     <!--This is html comment area-->
 
-<h1>this is heading one</h1>
-<h2>This is sub heading</h2>
+<h1 class="toph1">this is heading one</h1>
+<h2 id="toph2">This is sub heading</h2>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aut placeat nemo odit. Magni nemo doloremque nulla necessitatibus perferendis nesciunt?</p>
 <h3>List of fruits</h3>
 <ul>
@@ -32,6 +32,73 @@
 </ol>
  
    <a href="https://google.com" target="_blank">Google . com</a>
+
    <img src="./images/one.jpg" alt="forest" width="50" height="50">
+
+   <h2>Table</h2>
+
+   <table border="5">
+    <caption>Monthly Sales Data</caption>
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th>Sales</th>
+      
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>January</td>
+        <td>$10,000</td>
+        
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$8,000</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Total</td>
+        <td>$18,000</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h2>HTML Form</h2>
+
+  <form action="/submit" method="post">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password">
+      <br />
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Preferences</legend>
+      <label for="newsletter">Subscribe to newsletter:</label>
+      <input type="checkbox" id="newsletter" name="newsletter">
+      <br />
+      <br />
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+    </fieldset>
+    
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
 </body>
 </html>
