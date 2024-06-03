@@ -2,6 +2,8 @@
 
 ## CSS CLASS RECORDING
 
+1. [CSS Basic](https://youtu.be/7vBdrIH5BW0)
+
 
 CSS (Cascading Style Sheets) is a stylesheet language used for describing the presentation of a document written in HTML. It controls the layout of multiple web pages all at once. Here's a basic guide to CSS:
 
