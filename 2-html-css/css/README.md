@@ -178,3 +178,77 @@ p {
     border: 2px solid red;
 }
 ```
+
+## BOX MODEL
+
+**Components of the CSS Box Model**
+
+1. Content Box:
+
+- This is the area where the content of the element, such as text, images, or other media, is displayed.
+- The size of the content box can be adjusted using the width and height properties in CSS.
+
+2. Padding:
+
+- Padding is the space between the content and the border of the element.
+- It creates an inner space inside the element, but outside the content.
+- Padding can be set using the padding property, which can take individual values for each side (top, right, bottom, left) or a single value to apply equally to all sides.
+
+3. Border:
+
+- The border wraps around the padding and the content.
+- It can be styled using properties such as border-width, border-style, and border-color.
+- Borders can also have individual settings for each side or a shorthand to set all at once.
+
+4. Margin:
+
+- Margin is the space outside the border, separating the element from other elements.
+- Margins can be set using the margin property, which can also accept individual values for each side or a shorthand value.
+- Margins can collapse, meaning the vertical margins of adjacent elements might combine to form a single margin.
+
+example
+
+```css
+.box {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 10px solid black;
+  margin: 30px;
+}
+
+```
+
+`For an element with the class box, the total size calculation is:`
+
+Content: 200px (width) x 100px (height)
+
+- Padding: 20px on all sides
+- Border: 10px on all sides
+- Margin: 30px on all sides
+- The total width and height including padding and border would be:
+
+- Width: 200px (content) + 20px (left padding) + 20px (right padding) + 10px (left border) + 10px (right border) = 260px
+- Height: 100px (content) + 20px (top padding) + 20px (bottom padding) + 10px (top border) + 10px (bottom border) = 160px
+
+`Box-Sizing Property`
+
+The box-sizing property can change how the size of an element is calculated. It has two main values:
+
+`content-box (default):`
+
+The width and height properties include only the content, not padding, border, or margin.
+
+`border-box:`
+
+The width and height properties include content, padding, and border, but not margin.
+
+```css
+.box {
+  box-sizing: border-box;
+}
+
+```
+
+## FLEX BOX
+
