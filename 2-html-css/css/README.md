@@ -254,3 +254,186 @@ The width and height properties include content, padding, and border, but not ma
 
 ## FLEX BOX
 
+CSS Flexbox, or the Flexible Box Layout Module, is a CSS3 layout mode designed to help you arrange items within a container, even when their size is unknown or dynamic. Flexbox aims to provide a more efficient way to lay out, align, and distribute space among items in a container.
+
+**Basic Concepts**
+
+1. `Flex Container:` The parent element where the flex layout is applied. 
+ It’s defined by setting display: flex or display: inline-flex.
+
+```css
+.container {
+    display: flex;
+}
+
+
+```
+
+
+2. `Flex Items:` The child elements inside the flex container. 
+These are automatically adjusted to align and distribute space within the container.
+
+
+**Flex Container Properties**
+
+- `flex-direction:` Defines the direction in which the flex items are placed in the flex container.
+
+    - `row (default):` left to right in ltr; right to left in rtl
+    - `row-reverse:` right to left in ltr; left to right in rtl
+    - `column:` top to bottom
+    - `column-reverse:` bottom to top
+
+
+```css
+.container {
+    flex-direction: row;
+}
+```
+
+- `justify-content:` Aligns the flex items along the main axis (horizontal by default).
+
+    - `flex-start (default):` items are packed toward the start of the flex-direction
+    - `flex-end:` items are packed toward the end of the flex-direction
+    - `center:` items are centered along the line
+    - `space-between:` items are evenly distributed; first item is at the start, last item at the end
+    - `space-around:` items are evenly distributed with space around them
+    - `space-evenly:` items are distributed so that the spacing between any two items (and the space to the edges) is equal
+
+```css
+.container {
+    justify-content: center;
+}
+```
+
+- `align-items:` Aligns the flex items along the cross axis (vertical by default).
+
+    - `stretch (default):` stretch to fill the container
+    - `flex-start:` cross-start margin edge of the items is placed on the cross-start line
+    - `flex-end:` cross-end margin edge of the items is placed on the cross-end line
+    - `center:` items are centered in the cross-axis
+    - `baseline:` items are aligned such as their baselines align
+
+```css
+
+.container {
+    align-items: center;
+}
+```
+
+`flex-wrap:` Defines whether the flex items should wrap or not, if there isn’t enough space in the flex container.
+
+`nowrap (default):` all flex items will be on one line
+
+`wrap:` flex items will wrap onto multiple lines, from top to bottom
+
+`wrap-reverse:` flex items will wrap onto multiple lines from bottom to top
+
+
+```css
+.container {
+    flex-wrap: wrap;
+}
+```
+
+
+`align-content:` Aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
+
+`flex-start:` lines packed to the start of the container
+
+`flex-end:` lines packed to the end of the container
+
+`center:` lines packed to the center of the container
+
+`space-between:` lines evenly distributed; the first line is at the start of the container while the last one is at the end
+
+`space-around:` lines evenly distributed with equal space around each line
+
+`stretch (default):` lines stretch to take up the remaining space
+
+```css
+.container {
+    align-content: space-around;
+}
+```
+
+**Flex Item Properties (children)**
+
+`order:` Controls the order in which flex items appear in the flex container.
+
+```css
+.item {
+    order: 2;
+}
+```
+
+`flex-grow:` Defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates how much of the available space inside the flex container the item should take up.
+
+```css
+.item {
+    flex-grow: 1;
+}
+```
+
+`flex-shrink:` Defines the ability for a flex item to shrink if necessary. It also accepts a unitless value that serves as a proportion.
+
+```css
+
+.item {
+    flex-shrink: 1;
+}
+```
+
+`flex-basis:` Defines the default size of an element before the remaining space is distributed. It can be a length (e.g., 20%, 5rem, etc.) or auto.
+
+```css
+
+.item {
+    flex-basis: 100px;
+}
+```
+
+`align-self:` Allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.
+
+```css
+.item {
+    align-self: flex-end;
+}
+```
+Example
+
+Here is a complete example to illustrate Flexbox in action:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+        .item {
+            background-color: lightcoral;
+            padding: 20px;
+            margin: 10px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>
+```
