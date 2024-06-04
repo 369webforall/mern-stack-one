@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+}
+body {
+    border: 5px solid red;
+    padding: 5px;
+}
+
+h1 {
+    border:12px solid purple;
+    padding: 50px 20px 100px 10px;
+    margin: 20px 10px;
+    width: 200px;
+    height: 500px;
+}
+
+h2 {
+    border: 5px solid orange;
+    margin: 20px;
+    padding: 30px;
+}
+
+button {
+    background-color: sandybrown;
+    font-size: 24px;
+    padding: 12px 24px;
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: whitesmoke;
+}
+
+p {
+    border: 5px solid brown;
+    margin:10px;
+    padding: 20px;
+  
+
+}
+
+.box {
+   
+    height: 100px;
+    padding: 20px;
+    border: 10px solid black;
+  
+    
+  }
+  
