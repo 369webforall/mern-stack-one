@@ -1,0 +1,19 @@
+.container {
+display: flex;
+border: 5px solid red;
+gap: 30px;
+height: 600px;
+}
+
+.item {
+    background-color: lightcoral;
+   padding: 20px;
+   flex-grow: 1;
+   flex-shrink: 1;
+  
+}
+
+.item6 {
+    align-self: flex-start;
+    height: 300px;
+}
