@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    background-color: #23424a;
+    color: white;
+    padding: 50px 20px;
+   
+}
+
+.hero__text {
+    width: 50%;
+    border:2px solid orange;
+}
+
+.hero__text h1 {
+    margin-bottom: 20px;
+    font-size: 60px;
+    line-height: 0.9;
+}
+.hero__text p {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
