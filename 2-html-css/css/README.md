@@ -8,6 +8,8 @@
 
 3. [CSS Basic- Flex Box](https://youtu.be/ZuzZxYdcfZw)
 
+4. [CSS Basic- Layout exercise](https://youtu.be/R3QeSst58lo)
+
 
 CSS (Cascading Style Sheets) is a stylesheet language used for describing the presentation of a document written in HTML. It controls the layout of multiple web pages all at once. Here's a basic guide to CSS:
 

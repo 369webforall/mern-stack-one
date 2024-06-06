@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #23424a;
+    color: white;
+    padding: 100px 0px;
+}
+
+.wrapper {
+    width: 80%;
+    max-width:1200px;
+   margin: 0 auto;
+
+}
+
+.header__text {
+    width: 60%;
+}
+
+.header__text h1 {
+    font-size: 60px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 16px;
+    font-size: 21px;
+}
+
+.hero {
+    padding: 20px 0;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
