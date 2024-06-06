@@ -439,3 +439,8 @@ Here is a complete example to illustrate Flexbox in action:
 </body>
 </html>
 ```
+
+
+## Projects
+
+[Google DOC - Practical exercise to complete](https://docs.google.com/document/d/144gpYdeVUQljEFQBK_-x5M4KSM3R9Dc7mLkQpQNFjwA/edit)
