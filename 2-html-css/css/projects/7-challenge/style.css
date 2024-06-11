@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html, body {
+    font-size: 10px;
+}
+
+:root {
+    --grayLight: #F3EED9;
+    --brownPrimary:#824936;
+    --blueDark:#222C2A;
+    --playfair: "Playfair Display", serif;
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+   font-size: 2rem;
+}
+
+.container {
+    width: 80%;
+    max-width: 1128px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+.row {
+    display: flex;
+    gap:30px;
+}
+
+h1 {
+    font-size: 6rem;
+    font-family: var(--playfair);
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 3.6rem;
+    font-family: var(--playfair);
+    font-weight: 900;
+}
+
+/* section1 */
+
+.section1 {
+    background-color: var(--grayLight);
+    padding: 100px 0;
+}
+
+.section1__text {
+    max-width: 660px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.section1 p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 16px;
+    letter-spacing: 3px;
+    
+}
+
+.section1 h1 {
+    color: var(--brownPrimary);
+    line-height: 0.8;
+}
+
+/* section2 */
+
+.section2 {
+    padding: 50px 0;
+}
+
+.section2 h2 {
+    color: var(--brownPrimary);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* section3 */
+
+.section3 {
+    background-color: var(--blueDark);
+    color: white;
+    padding: 50px 0;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.col {
+    flex:1;
+}
+
+.section3 h2 {
+    margin-bottom: 26px;
+}
+
+/* section4 */
+
+.section4 {
+    padding: 50px 0;
+    background-color: var(--brownPrimary);
+    color: white;
+}
+
+.section4 h2 {
+    margin-bottom: 25px;
+}
