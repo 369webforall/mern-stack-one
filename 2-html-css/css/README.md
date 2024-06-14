@@ -20,6 +20,8 @@
 
 9. [CSS Basic- Layout exercise- CH-8](https://youtu.be/F4RYnAEL4s8)
 
+10. [CSS Basic- Layout exercise- CH-8-final](https://youtu.be/eqL-O0NiUfM)
+
 
 CSS (Cascading Style Sheets) is a stylesheet language used for describing the presentation of a document written in HTML. It controls the layout of multiple web pages all at once. Here's a basic guide to CSS:
 
