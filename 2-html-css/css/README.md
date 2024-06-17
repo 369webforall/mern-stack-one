@@ -22,6 +22,8 @@
 
 10. [CSS Basic- Layout exercise- CH-8-final](https://youtu.be/eqL-O0NiUfM)
 
+10. [CSS Basic- CARD, Position properties](https://youtu.be/9JkwZKsK4q4)
+
 
 CSS (Cascading Style Sheets) is a stylesheet language used for describing the presentation of a document written in HTML. It controls the layout of multiple web pages all at once. Here's a basic guide to CSS:
 
@@ -453,6 +455,92 @@ Here is a complete example to illustrate Flexbox in action:
 </body>
 </html>
 ```
+
+## CSS Position properties
+
+CSS position properties are used to control the layout and positioning of HTML elements on a webpage. Understanding these properties is crucial for creating complex and responsive web designs. Here are the key position properties in CSS:
+
+1. Static (default)
+
+`position: static;`
+
+- This is the default positioning for all HTML elements. Elements are positioned according to the normal flow of the document, meaning they appear in the order they are written in the HTML. They are not affected by top, right, bottom, or left properties.
+
+```css
+div {
+  position: static; /* Default behavior */
+}
+```
+
+2. Relative
+
+`position: relative;`
+
+- Elements are positioned relative to their normal position in the document flow. This means you can use top, right, bottom, and left properties to move the element from its original position without affecting the layout of surrounding elements. The space for the element in the normal flow is still preserved.
+
+```css
+div {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+```
+
+3. Absolute
+
+`position: absolute;`
+
+- Elements are positioned relative to the nearest positioned ancestor (an ancestor with a position other than static). If there is no such ancestor, they are positioned relative to the initial containing block (usually the viewport). The top, right, bottom, and left properties are used to specify the exact position. Absolute positioning removes the element from the normal document flow, so it does not affect the position of other elements.
+
+```css
+div {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+```
+
+4. Fixed
+
+`position: fixed;`
+
+- Elements are positioned relative to the viewport and do not move when the page is scrolled. Like absolute positioning, fixed positioning removes the element from the normal document flow. The top, right, bottom, and left properties are used to specify the position relative to the viewport.
+
+```css
+div {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+```
+
+5. Sticky
+
+`position: sticky;`
+
+- Elements are positioned based on the user's scroll position. A sticky element toggles between relative and fixed positioning, depending on the scroll position. It is treated as relative until it crosses a specified threshold (using top, right, bottom, or left), after which it is treated as fixed. This is useful for creating headers or sidebars that stick to the top of the page when scrolled to.
+
+```css
+div {
+  position: sticky;
+  top: 10px; /* Sticks to the top of the container after scrolling 10px */
+}
+
+```
+
+### Practical Use Cases
+- Static: For elements that follow the normal flow of the document (e.g., paragraphs, headers).
+
+- Relative: For slight adjustments of an element's position without affecting the surrounding elements (e.g., for small offsets or aligning elements within a container).
+
+- Absolute: For elements that need to be placed exactly within a specific container or for overlays (e.g., dropdown menus, tooltips).
+
+- Fixed: For elements that should stay in a fixed position relative to the viewport (e.g., navigation bars, back-to-top buttons).
+
+- Sticky: For elements that should remain visible within the viewport while scrolling but only after reaching a certain scroll position (e.g., sticky headers or sidebars).
 
 
 ## Projects
