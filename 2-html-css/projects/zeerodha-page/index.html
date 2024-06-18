@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zerodha finance</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
+        <div class="wrapper row">
+            <div class="logo">
         <a href="#">
             <img src="./images/logo.svg" alt="zerodha logo">
         </a>
+    </div>
 
+    <nav>
         <ul>
             <li><a href="#">Signup</a></li>
             <li><a href="#">About</a></li>
@@ -19,20 +25,28 @@
             <li><a href="#">Support</a></li>
             
         </ul>
+    </nav>
+
+        <div class="icon"><i class="fa-solid fa-bars icon__bars"></i></div>
+    </div>
     </header>
     <main>
-        <section>
+        <section class="main__hero">
+            <div class="wrapper">
             <img src="./images/landing.png" alt="zerodha hero">
+        </div>
         </section>
 
-        <section>
+        <section class="main__text">
             <h1>Invest in everything</h1>
             <p>Online platform to invest in stocks, derivatives, mutual funds, and more</p>
-            <button>Sign up now</button>
+            <button class="btn">Sign up now</button>
         </section>
     </main>
     <footer>
+        <div class="wrapper">
         <p>&copy; This site belongs to dev - 2024 </p>
+    </div>
     </footer>
 </body>
 </html>

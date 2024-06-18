@@ -6,6 +6,10 @@
 
 2. [HTML CLASS- 2](https://youtu.be/giX7jF47iss)
 
+3. [Project - zerodha landing page ](https://youtu.be/SVCsCi6hdHM)
+
+
+
 
 # HTML - Hypertext Markup Language
 
