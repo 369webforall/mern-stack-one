@@ -608,13 +608,15 @@ Used for selecting multiple options independently.
 Used for selecting an option from a dropdown list.
 
 
-<label for="cars">Choose a car:</label>
+```html <label for="cars">Choose a car:</label>
 <select id="cars" name="cars">
   <option value="volvo">Volvo</option>
   <option value="saab">Saab</option>
   <option value="mercedes">Mercedes</option>
   <option value="audi">Audi</option>
-</select>
+</select>```
+
+
 
 
 ## Projects
