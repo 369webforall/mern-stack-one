@@ -607,7 +607,7 @@ Used for selecting multiple options independently.
 6. Dropdown List (<select>)
 Used for selecting an option from a dropdown list.
 
-```html
+
 <label for="cars">Choose a car:</label>
 <select id="cars" name="cars">
   <option value="volvo">Volvo</option>
@@ -615,7 +615,7 @@ Used for selecting an option from a dropdown list.
   <option value="mercedes">Mercedes</option>
   <option value="audi">Audi</option>
 </select>
-```
+
 
 ## Projects
 
