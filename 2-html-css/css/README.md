@@ -615,8 +615,9 @@ Used for selecting an option from a dropdown list.
   <option value="mercedes">Mercedes</option>
   <option value="audi">Audi</option>
 </select>
-
 ```
+
+
 
 7. Text Area (<textarea>)
 Used for multi-line text input.
