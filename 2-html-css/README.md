@@ -10,7 +10,6 @@
 
 
 
-
 # HTML - Hypertext Markup Language
 
 - Describes the structure of a Web page

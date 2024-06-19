@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form exercise</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form</p>
+    <form action="https://e5code.com" method="POST">
+        <fieldset>
+            <label for="first-name">First Name: <input type="text" id="first-name" name="first-name"></label>
+            <label for="last-name">Last Name: <input type="text" id="last-name" name="last-name"></label>
+            <label for="email">Email: <input type="email" id="email" name="email"></label>
+            <label for="password">Password: <input type="password" id="password" name="password"></label>
+        </fieldset>
+        <fieldset>
+            <legend>select gender</legend>
+            <label for="male"><input type="radio" id="male" name="gender" /> Male</label>
+            <label for="female"><input type="radio" id="female" name="gender" /> Female</label>
+        </fieldset>
+        <fieldset>
+            <legend>Bio data</legend>
+            <label for="referrer">How did you hear about us?
+                <select id="referrer" name="referrer">
+                  <option value="">(select one)</option>
+                  <option value="1">freeCodeCamp News</option>
+                  <option value="2">freeCodeCamp YouTube Channel</option>
+                  <option value="3">freeCodeCamp Forum</option>
+                  <option value="4">Other</option>
+                </select>
+              </label>
+
+            <label for="file">Add your bio: <input type="file"></label>
+
+            <label for="resume">
+                Your Bio:
+                <textarea name="resume" id="resume" placeholder="tell us about yourself" rows="10" cols="40"></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <p>Please select the terms and condition</p>
+            <label for="terms"><input type="checkbox" id="terms" value="terms&condition"> Terms and Condition</label>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
