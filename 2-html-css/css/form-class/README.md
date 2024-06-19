@@ -58,8 +58,10 @@ Used for selecting multiple options independently.
 ```
 
 
-6. Dropdown List (<select>)
+6.  Dropdown List (`<select>`)
 Used for selecting an option from a dropdown list.
+
+
 
 ```html
 <label for="car">Select Car:
@@ -70,8 +72,9 @@ Used for selecting an option from a dropdown list.
     <option value="audi">Audi</option>
   </select>
     
-</label>
-```
+</label>```
+
+
 
 7. Text Area (<textarea>)
 Used for multi-line text input.
