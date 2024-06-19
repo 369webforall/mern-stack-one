@@ -600,7 +600,6 @@ Used for selecting one option from a group.
 Used for selecting multiple options independently.
 
 ```html
-
 <label for="subscribe">Subscribe:</label>
 <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
 ```
@@ -616,14 +615,17 @@ Used for selecting an option from a dropdown list.
   <option value="mercedes">Mercedes</option>
   <option value="audi">Audi</option>
 </select>
+
 ```
 
 7. Text Area (<textarea>)
 Used for multi-line text input.
 
 ```html
+
 <label for="message">Message:</label>
 <textarea id="message" name="message"></textarea>
+
 ```
 
 **Example Form**
