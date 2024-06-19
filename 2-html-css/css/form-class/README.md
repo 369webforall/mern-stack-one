@@ -57,20 +57,6 @@ Used for selecting multiple options independently.
 <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
 ```
 
-6. Dropdown List (<select>)
-Used for selecting an option from a dropdown list.
-
-
-```html
-<label for="cars">Choose a car:</label>
-<select id="cars" name="cars">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
-</select>
-
-```
 
 7. Text Area (<textarea>)
 Used for multi-line text input.
