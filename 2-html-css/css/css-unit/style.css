@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin:  0 auto;
+}
+
+/* .container {
+    font-size: 50px;
+} */
+
+
+
+.box {
+    border: 2px solid red;
+    width: 50%;
+    font-size: 2rem;
+    
+}
+
+h2 {
+    font-size: 1em;
+}
+
+button{
+    padding: 1em 2em;
+    background-color: red;
+    border: none;
+}
+
+p {
+    font-size: 2rem;
+}
+
+body {
+    border: 5px solid red;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 20vmax;
+}
