@@ -30,6 +30,7 @@
 
 14. [CSS units](https://youtu.be/DX2m64VOJHY)
 
+15. [CSS Grid](https://youtu.be/ZN5rac04ZWk)
 
 CSS (Cascading Style Sheets) is a stylesheet language used for describing the presentation of a document written in HTML. It controls the layout of multiple web pages all at once. Here's a basic guide to CSS:
 
@@ -39,22 +40,23 @@ CSS syntax consists of a selector and a declaration block.
 
 ```css
 selector {
-    property: value;
-    property: value;
-    ...
+  property: value;
+  property: value;
+  ...;
 }
 ```
-### Selectors 
+
+### Selectors
 
 Selectors are used to target HTML elements.
 
 **Type Selector**
 
-1. Name or tag 
+1. Name or tag
 
 ```css
 p {
-    color: blue;
+  color: blue;
 }
 // This will select all <p> elements and set their text color to blue
 ```
@@ -63,7 +65,7 @@ p {
 
 ```css
 .className {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 // This will select all elements with the class className.
@@ -72,9 +74,8 @@ p {
 3. ID Selector
 
 ```css
-
 #idName {
-    margin: 10px;
+  margin: 10px;
 }
 
 // This will select the element with the ID idName.
@@ -84,7 +85,7 @@ p {
 
 ```css
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 // This will apply the box-sizing property to all elements.
@@ -94,11 +95,10 @@ p {
 
 ```css
 [type="text"] {
-    border: 1px solid #000;
+  border: 1px solid #000;
 }
 
 //This will select all input elements with the attribute type="text".
-
 ```
 
 ## Common Properties
@@ -110,9 +110,7 @@ Here are some commonly used CSS properties:
 ```css
 color: red;
 background-color: yellow;
-background-image: url('image.jpg');
-
-
+background-image: url("image.jpg");
 ```
 
 2. Text
@@ -150,7 +148,6 @@ display: inline-block;
 display: none;
 ```
 
-
 Example
 Here’s an example combining some of the basics:
 
@@ -159,49 +156,48 @@ Here’s an example combining some of the basics:
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Example</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <h1 class="heading">Hello, World!</h1>
     <p>This is a paragraph.</p>
     <p id="special">This is a special paragraph.</p>
-</body>
+  </body>
 </html>
 ```
-
 
 ### CSS (styles.css):
 
 ```css
 /* Type Selector */
 p {
-    color: green;
+  color: green;
 }
 
 /* Class Selector */
 .heading {
-    font-size: 24px;
-    color: blue;
+  font-size: 24px;
+  color: blue;
 }
 
 /* ID Selector */
 #special {
-    font-style: italic;
-    background-color: lightgray;
+  font-style: italic;
+  background-color: lightgray;
 }
 
 /* Universal Selector */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Attribute Selector */
 [type="text"] {
-    border: 2px solid red;
+  border: 2px solid red;
 }
 ```
 
@@ -242,7 +238,6 @@ example
   border: 10px solid black;
   margin: 30px;
 }
-
 ```
 
 `For an element with the class box, the total size calculation is:`
@@ -273,7 +268,6 @@ The width and height properties include content, padding, and border, but not ma
 .box {
   box-sizing: border-box;
 }
-
 ```
 
 ## FLEX BOX
@@ -282,65 +276,59 @@ CSS Flexbox, or the Flexible Box Layout Module, is a CSS3 layout mode designed t
 
 **Basic Concepts**
 
-1. `Flex Container:` The parent element where the flex layout is applied. 
- It’s defined by setting display: flex or display: inline-flex.
+1. `Flex Container:` The parent element where the flex layout is applied.
+   It’s defined by setting display: flex or display: inline-flex.
 
 ```css
 .container {
-    display: flex;
+  display: flex;
 }
-
-
 ```
 
-
-2. `Flex Items:` The child elements inside the flex container. 
-These are automatically adjusted to align and distribute space within the container.
-
+2. `Flex Items:` The child elements inside the flex container.
+   These are automatically adjusted to align and distribute space within the container.
 
 **Flex Container Properties**
 
 - `flex-direction:` Defines the direction in which the flex items are placed in the flex container.
 
-    - `row (default):` left to right in ltr; right to left in rtl
-    - `row-reverse:` right to left in ltr; left to right in rtl
-    - `column:` top to bottom
-    - `column-reverse:` bottom to top
-
+  - `row (default):` left to right in ltr; right to left in rtl
+  - `row-reverse:` right to left in ltr; left to right in rtl
+  - `column:` top to bottom
+  - `column-reverse:` bottom to top
 
 ```css
 .container {
-    flex-direction: row;
+  flex-direction: row;
 }
 ```
 
 - `justify-content:` Aligns the flex items along the main axis (horizontal by default).
 
-    - `flex-start (default):` items are packed toward the start of the flex-direction
-    - `flex-end:` items are packed toward the end of the flex-direction
-    - `center:` items are centered along the line
-    - `space-between:` items are evenly distributed; first item is at the start, last item at the end
-    - `space-around:` items are evenly distributed with space around them
-    - `space-evenly:` items are distributed so that the spacing between any two items (and the space to the edges) is equal
+  - `flex-start (default):` items are packed toward the start of the flex-direction
+  - `flex-end:` items are packed toward the end of the flex-direction
+  - `center:` items are centered along the line
+  - `space-between:` items are evenly distributed; first item is at the start, last item at the end
+  - `space-around:` items are evenly distributed with space around them
+  - `space-evenly:` items are distributed so that the spacing between any two items (and the space to the edges) is equal
 
 ```css
 .container {
-    justify-content: center;
+  justify-content: center;
 }
 ```
 
 - `align-items:` Aligns the flex items along the cross axis (vertical by default).
 
-    - `stretch (default):` stretch to fill the container
-    - `flex-start:` cross-start margin edge of the items is placed on the cross-start line
-    - `flex-end:` cross-end margin edge of the items is placed on the cross-end line
-    - `center:` items are centered in the cross-axis
-    - `baseline:` items are aligned such as their baselines align
+  - `stretch (default):` stretch to fill the container
+  - `flex-start:` cross-start margin edge of the items is placed on the cross-start line
+  - `flex-end:` cross-end margin edge of the items is placed on the cross-end line
+  - `center:` items are centered in the cross-axis
+  - `baseline:` items are aligned such as their baselines align
 
 ```css
-
 .container {
-    align-items: center;
+  align-items: center;
 }
 ```
 
@@ -352,13 +340,11 @@ These are automatically adjusted to align and distribute space within the contai
 
 `wrap-reverse:` flex items will wrap onto multiple lines from bottom to top
 
-
 ```css
 .container {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 ```
-
 
 `align-content:` Aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
 
@@ -376,7 +362,7 @@ These are automatically adjusted to align and distribute space within the contai
 
 ```css
 .container {
-    align-content: space-around;
+  align-content: space-around;
 }
 ```
 
@@ -386,7 +372,7 @@ These are automatically adjusted to align and distribute space within the contai
 
 ```css
 .item {
-    order: 2;
+  order: 2;
 }
 ```
 
@@ -394,25 +380,23 @@ These are automatically adjusted to align and distribute space within the contai
 
 ```css
 .item {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 ```
 
 `flex-shrink:` Defines the ability for a flex item to shrink if necessary. It also accepts a unitless value that serves as a proportion.
 
 ```css
-
 .item {
-    flex-shrink: 1;
+  flex-shrink: 1;
 }
 ```
 
 `flex-basis:` Defines the default size of an element before the remaining space is distributed. It can be a length (e.g., 20%, 5rem, etc.) or auto.
 
 ```css
-
 .item {
-    flex-basis: 100px;
+  flex-basis: 100px;
 }
 ```
 
@@ -420,9 +404,10 @@ These are automatically adjusted to align and distribute space within the contai
 
 ```css
 .item {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 ```
+
 Example
 
 Here is a complete example to illustrate Flexbox in action:
@@ -430,35 +415,35 @@ Here is a complete example to illustrate Flexbox in action:
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox Example</title>
     <style>
-        .container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            height: 100vh;
-        }
-        .item {
-            background-color: lightcoral;
-            padding: 20px;
-            margin: 10px;
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: 100px;
-        }
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+      }
+      .item {
+        background-color: lightcoral;
+        padding: 20px;
+        margin: 10px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="item">Item 1</div>
-        <div class="item">Item 2</div>
-        <div class="item">Item 3</div>
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
     </div>
-</body>
+  </body>
 </html>
 ```
 
@@ -490,7 +475,6 @@ div {
   top: 20px;
   left: 30px;
 }
-
 ```
 
 3. Absolute
@@ -505,7 +489,6 @@ div {
   top: 50px;
   left: 100px;
 }
-
 ```
 
 4. Fixed
@@ -520,7 +503,6 @@ div {
   top: 0;
   right: 0;
 }
-
 ```
 
 5. Sticky
@@ -534,10 +516,10 @@ div {
   position: sticky;
   top: 10px; /* Sticks to the top of the container after scrolling 10px */
 }
-
 ```
 
 ### Practical Use Cases
+
 - Static: For elements that follow the normal flow of the document (e.g., paragraphs, headers).
 
 - Relative: For slight adjustments of an element's position without affecting the surrounding elements (e.g., for small offsets or aligning elements within a container).
@@ -547,8 +529,6 @@ div {
 - Fixed: For elements that should stay in a fixed position relative to the viewport (e.g., navigation bars, back-to-top buttons).
 
 - Sticky: For elements that should remain visible within the viewport while scrolling but only after reaching a certain scroll position (e.g., sticky headers or sidebars).
-
-
 
 ## Projects
 
