@@ -17,9 +17,7 @@ body {
 
 .container {
   background-color: #eeebeb;
-
   border-radius: 8px;
-  height: 100%;
 }
 
 header {
@@ -40,6 +38,10 @@ p {
   padding: 0 10px 15px 10px;
   margin: 20px 0;
 }
+figure {
+  width: 1000px;
+  margin: 0 auto;
+}
 
 img {
   width: 100%;
@@ -51,4 +53,55 @@ figcaption {
   font-size: 1.8rem;
   margin: 20px auto;
   text-align: center;
+}
+
+.hero__text {
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.hero__list {
+  width: 800px;
+  margin: 30px auto;
+}
+
+li {
+  font-size: 2rem;
+  margin-top: 1.6rem;
+}
+
+span {
+  font-weight: bold;
+}
+
+.quote {
+  margin: 30px 0;
+  font-style: italic;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.author {
+  margin: 30px 0;
+  font-style: italic;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+footer a {
+  color: green;
 }
