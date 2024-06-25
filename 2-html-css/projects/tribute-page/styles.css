@@ -3,3 +3,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html,
+body {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  padding: 20px 10px;
+}
+
+.container {
+  background-color: #cecece;
+
+  border-radius: 8px;
+  height: 100%;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 1.8rem;
+}
