@@ -8,7 +8,7 @@
 
 3. [Project - zerodha landing page ](https://youtu.be/SVCsCi6hdHM)
 
-
+4. [Project - Tribute page](https://youtu.be/-NkK8xEGK6w)
 
 # HTML - Hypertext Markup Language
 
@@ -16,7 +16,7 @@
 
 ## LEVEL ONE
 
-  **Two things you must understand in high level**
+**Two things you must understand in high level**
 
 1. Tags / html file
 2. Attributes
@@ -36,37 +36,33 @@
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+    <ul>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ul>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-<ul>
-<li>One</li>
-<li>Two</li>
-<li>Three</li>
-</ul>
+    <ol>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ol>
 
-<ol>
-<li>One</li>
-<li>Two</li>
-<li>Three</li>
-</ol>
+    <img src="image link" alt="image text" />
 
-<img src="image link" alt="image text" />
+    <a href="link">Home</a>
 
-<a href="link">Home</a>
+    <hr />
 
-<hr />
-
-<br />
-
-
-</body>
+    <br />
+  </body>
 </html>
-
 ```
 
 ![HTML Element](./images/1.png)
@@ -139,7 +135,6 @@ There are hundreds of HTML elements, most of the time we only use these elemets.
 
 ## Best Practice -sample code from freecode camp
 
-
 ```html
 <body>
     <main>
@@ -211,7 +206,6 @@ The container element for the table.
 `<tr> (Table Row):`
 Defines a row in the table. It contains <th> or <td> elements.
 
-
 <tr>
   <td>Row 1, Cell 1</td>
   <td>Row 1, Cell 2</td>
@@ -219,7 +213,6 @@ Defines a row in the table. It contains <th> or <td> elements.
 
 `<th> (Table Header Cell):`
 Defines a header cell in a table, usually used at the start of a row or column. Text in <th> elements is typically bold and centered by default.
-
 
 <tr>
   <th>Header 1</th>
@@ -248,7 +241,6 @@ Groups a set of rows that define the head of the table. It usually contains head
 `<tbody> (Table Body):`
 Groups a set of rows that contain the main body of the table data.
 
-
 <tbody>
   <tr>
     <td>Data 1</td>
@@ -260,7 +252,6 @@ Groups a set of rows that contain the main body of the table data.
 
 Groups a set of rows that define the footer of the table.
 
-
 <tfoot>
   <tr>
     <td>Footer 1</td>
@@ -270,12 +261,10 @@ Groups a set of rows that define the footer of the table.
 <caption>:
 Provides a caption or title for the table.
 
-
 <caption>Table Title</caption>
 
 `<colgroup> and <col>:`
 The <colgroup> element groups one or more <col> elements, which define column properties for the table.
-
 
 <colgroup>
   <col style="background-color: yellow">
@@ -294,7 +283,9 @@ Example of a Complete HTML Table
 
 ```html
 <table border="1">
-  <caption>Monthly Sales Data</caption>
+  <caption>
+    Monthly Sales Data
+  </caption>
   <thead>
     <tr>
       <th>Month</th>
@@ -319,6 +310,7 @@ Example of a Complete HTML Table
   </tfoot>
 </table>
 ```
+
 Explanation of Example
 
 - <table border="1">: Creates a table with a border.
@@ -326,7 +318,6 @@ Explanation of Example
 - <thead>: Contains the header row with columns "Month" and "Sales".
 - <tbody>: Contains the data rows for January and February.
 - <tfoot>: Contains the footer row with the total sales.
-
 
 ## Form
 
@@ -337,7 +328,7 @@ The <form> element is the container for all form controls. It has several import
 - action: Specifies the URL to which the form data will be sent.
 - method: Defines the HTTP method to be used when sending the form data. Common values are GET and POST.
 - enctype: Specifies how the form data should be encoded when submitted. Common values are application/x-www-form-urlencoded (default) and multipart/form-data (used for file uploads).
-Important Form Tags
+  Important Form Tags
 
 `<input>:`
 The <input> element is used to create various types of form controls. Important attributes include:
@@ -365,12 +356,10 @@ The <label> element defines a label for an <input> element. The for attribute as
 `<textarea>:`
 The <textarea> element is used for multi-line text input.
 
-
 <textarea name="message" rows="4" cols="50"></textarea>
 
 `<select>:`
 The <select> element creates a drop-down list. It contains <option> elements.
-
 
 <select name="country">
   <option value="usa">USA</option>
@@ -380,19 +369,16 @@ The <select> element creates a drop-down list. It contains <option> elements.
 `<option>:`
 The <option> element defines an option in a drop-down list.
 
-
 <option value="usa">USA</option>
 
 `<button>:`
 The <button> element is used to create a clickable button.
-
 
 <button type="submit">Submit</button>
 
 `<fieldset> and <legend>:`
 
 The <fieldset> element groups related form controls, and the <legend> element provides a caption for the fieldset.
-
 
 <fieldset>
   <legend>Personal Information</legend>
@@ -402,7 +388,6 @@ The <fieldset> element groups related form controls, and the <legend> element pr
 
 `<datalist>:`
 The <datalist> element provides a list of predefined options for an <input> element.
-
 
 <input list="browsers" name="browser">
 <datalist id="browsers">
@@ -415,7 +400,6 @@ The <output> element represents the result of a calculation or user action.
 
 <output name="result" for="a b">0</output>
 
-
 ## Example of a Complete Form
 
 ```html
@@ -423,27 +407,27 @@ The <output> element represents the result of a calculation or user action.
   <fieldset>
     <legend>Personal Information</legend>
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name">
-    
+    <input type="text" id="name" name="name" />
+
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
-    
+    <input type="email" id="email" name="email" />
+
     <label for="message">Message:</label>
     <textarea id="message" name="message" rows="4" cols="50"></textarea>
   </fieldset>
-  
+
   <fieldset>
     <legend>Preferences</legend>
     <label for="newsletter">Subscribe to newsletter:</label>
-    <input type="checkbox" id="newsletter" name="newsletter">
-    
+    <input type="checkbox" id="newsletter" name="newsletter" />
+
     <label for="gender">Gender:</label>
-    <input type="radio" id="male" name="gender" value="male">
+    <input type="radio" id="male" name="gender" value="male" />
     <label for="male">Male</label>
-    <input type="radio" id="female" name="gender" value="female">
+    <input type="radio" id="female" name="gender" value="female" />
     <label for="female">Female</label>
   </fieldset>
-  
+
   <button type="submit">Submit</button>
   <button type="reset">Reset</button>
 </form>
@@ -457,31 +441,81 @@ The <output> element represents the result of a calculation or user action.
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Registration Form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1>Registration Form</h1>
     <p>Please fill out this form with the required information</p>
-    <form method="post" action='https://register-demo.freecodecamp.org'>
+    <form method="post" action="https://register-demo.freecodecamp.org">
       <fieldset>
-        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
-        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
-        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
-        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+        <label for="first-name"
+          >Enter Your First Name:
+          <input id="first-name" name="first-name" type="text" required
+        /></label>
+        <label for="last-name"
+          >Enter Your Last Name:
+          <input id="last-name" name="last-name" type="text" required
+        /></label>
+        <label for="email"
+          >Enter Your Email:
+          <input id="email" name="email" type="email" required
+        /></label>
+        <label for="new-password"
+          >Create a New Password:
+          <input
+            id="new-password"
+            name="new-password"
+            type="password"
+            pattern="[a-z0-5]{8,}"
+            required
+        /></label>
       </fieldset>
       <fieldset>
-        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
-        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
+        <label for="personal-account"
+          ><input
+            id="personal-account"
+            type="radio"
+            name="account-type"
+            class="inline"
+          />
+          Personal Account</label
+        >
+        <label for="business-account"
+          ><input
+            id="business-account"
+            type="radio"
+            name="account-type"
+            class="inline"
+          />
+          Business Account</label
+        >
         <label for="terms-and-conditions">
-          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+          <input
+            id="terms-and-conditions"
+            type="checkbox"
+            required
+            name="terms-and-conditions"
+            class="inline"
+          />
+          I accept the
+          <a href="https://www.freecodecamp.org/news/terms-of-service/"
+            >terms and conditions</a
+          >
         </label>
       </fieldset>
       <fieldset>
-        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
-        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
-        <label for="referrer">How did you hear about us?
+        <label for="profile-picture"
+          >Upload a profile picture:
+          <input id="profile-picture" type="file" name="file"
+        /></label>
+        <label for="age"
+          >Input your age (years):
+          <input id="age" type="number" name="age" min="13" max="120"
+        /></label>
+        <label for="referrer"
+          >How did you hear about us?
           <select id="referrer" name="referrer">
             <option value="">(select one)</option>
             <option value="1">freeCodeCamp News</option>
@@ -490,16 +524,21 @@ The <output> element represents the result of a calculation or user action.
             <option value="4">Other</option>
           </select>
         </label>
-        <label for="bio">Provide a bio:
-          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        <label for="bio"
+          >Provide a bio:
+          <textarea
+            id="bio"
+            name="bio"
+            rows="3"
+            cols="30"
+            placeholder="I like coding on the beach..."
+          ></textarea>
         </label>
       </fieldset>
       <input type="submit" value="Submit" />
     </form>
   </body>
 </html>
-
-
 ```
 
 - style.css
@@ -515,7 +554,8 @@ body {
   font-size: 16px;
 }
 
-h1, p {
+h1,
+p {
   margin: 1em auto;
   text-align: center;
 }
@@ -551,7 +591,8 @@ select {
   min-height: 2em;
 }
 
-input, textarea {
+input,
+textarea {
   background-color: #0a0a23;
   border: 1px solid #0a0a23;
   color: #ffffff;
@@ -578,10 +619,9 @@ input[type="file"] {
   padding: 1px 2px;
 }
 a {
-    color: #dfdfe2;
+  color: #dfdfe2;
 }
 ```
-
 
 ### Create basic html page structure for below Projects, Try to use semantic tags as possible. css not required.
 
@@ -628,10 +668,3 @@ Just create the structure of the page.
 [HTML Dog Tag List](http://www.htmldog.com/reference/htmltags/)
 [W3Schools Tag List](http://www.w3schools.com/tags/default.asp)
 [Quackit HTML Tag List](http://www.quackit.com/html/tags/)
-
-
-
-
-
-
-
