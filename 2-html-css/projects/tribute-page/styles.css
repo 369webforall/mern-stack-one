@@ -3,105 +3,103 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html,
 body {
   font-size: 10px;
 }
 
 body {
-  height: 100vh;
   padding: 20px 10px;
-  font-family: Arial, Helvetica, sans-serif[];
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-  background-color: #eeebeb;
-  border-radius: 8px;
+.wrapper {
+  background-color: #eee;
+  padding: 20px;
 }
+
+/* header */
 
 header {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 0 20px 0;
 }
-
 h1 {
-  font-size: 6rem;
-  margin-bottom: 16px;
+  font-size: 4rem;
 }
 
-p {
-  font-size: 1.8rem;
+header p {
+  font-size: 1.6rem;
+}
+
+/* main image */
+
+img {
+  width: 100%;
 }
 
 .hero__image {
-  background-color: whitesmoke;
-  padding: 0 10px 15px 10px;
-  margin: 20px 0;
+  background-color: white;
+  padding: 20px;
 }
 figure {
   width: 1000px;
   margin: 0 auto;
 }
 
-img {
-  width: 100%;
-  object-fit: contain;
-  border-radius: 5px;
+figcaption {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 20px 0 0 0;
 }
 
-figcaption {
-  font-size: 1.8rem;
-  margin: 20px auto;
-  text-align: center;
-}
+/* hero text */
 
 .hero__text {
-  margin: 20px 0;
+  padding: 50px 0;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 h2 {
-  font-size: 3rem;
   text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
 }
 
-.hero__list {
-  width: 800px;
-  margin: 30px auto;
-}
-
-li {
-  font-size: 2rem;
-  margin-top: 1.6rem;
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
 }
 
 span {
   font-weight: bold;
 }
 
-.quote {
-  margin: 30px 0;
+.quote_text {
+  font-size: 1.6rem;
   font-style: italic;
+  margin-bottom: 30px;
 }
 
-p {
-  font-size: 1.8rem;
-}
-
-.author {
-  margin: 30px 0;
+.quote_author {
+  font-size: 1.2rem;
   font-style: italic;
+  margin-bottom: 16px;
 }
 
 footer {
-  padding: 20px 0;
   text-align: center;
+  font-size: 2rem;
 }
 
-footer p {
-  font-size: 2.6rem;
-  font-weight: bold;
-}
-
-footer a {
+a {
+  font-style: italic;
   color: green;
 }
