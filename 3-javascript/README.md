@@ -9,6 +9,8 @@
 
 # Video (class recording and offline video)
 
+1. [Js-Basic - 1](https://youtu.be/lrW_L0Grpjg)
+
 ## Projects Video
 
 **JavaScript basic to advance**
