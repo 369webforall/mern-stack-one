@@ -9,7 +9,9 @@
 
 # Video (class recording and offline video)
 
-1. [Js-Basic - 1](https://youtu.be/lrW_L0Grpjg)
+1. [Js-Basic - class 1](https://youtu.be/lrW_L0Grpjg)
+
+2. [Js-Basic - class 2](https://youtu.be/B4B7KshryIA)
 
 ## Projects Video
 
